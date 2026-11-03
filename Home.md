@@ -7,6 +7,12 @@ cssclasses: [mos-home]
 > [!tip] Start here
 > **Doing a job?** → [Playbooks](#playbooks) · **Need an example?** → [Case studies](#case-studies) · [Swipe file](#swipe-file) · **Need advice?** → run `/advise <question>` in Claude Code
 
+## Playbooks to update
+
+Flagged by `/process-inbox` when a new note would change a playbook. Run `/build-playbook <job> refresh` to work through them.
+
+![[_views/review-due.base#Playbooks to update]]
+
 ## Playbooks
 
 ![[_views/playbooks.base#Hubs]]
@@ -27,7 +33,7 @@ See the full list in [[playbooks/_index|the playbook index]].
 
 ## Due for review
 
-![[_views/review-due.base]]
+![[_views/review-due.base#Aging or past review]]
 
 ---
 

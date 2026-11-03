@@ -19,6 +19,8 @@ Each **hub playbook** runs:
 
 **Sources: canon first, then the best of the web.** Playbooks draw on every relevant piece from the canon, plus best-in-class material from the wider web, especially where the canon is thin. **Citations** are always a link to the library note with the source's full name, e.g. `([[Note Title - Jane Example|Jane Example]])`, with several separated by semicolons. No dates and no markers in the citation: the library note holds the date and its `tier` (whether the source is a trusted one). Only numbers and benchmarks carry an inline `(as of YYYY-MM)`. Build or refresh playbooks with `/build-playbook <job> [refresh]`.
 
+**Pending updates.** When `/process-inbox` finds a new library note that would change a playbook (it contradicts it, gives a newer figure, or adds something missing), it writes a one-line flag under `pending_updates` in that playbook's frontmatter. `Home.md` lists them under *Playbooks to update*. `/build-playbook <job> refresh` works through the flags and clears them.
+
 ## Your playbooks
 
 Add a line per playbook as you build them with `/build-playbook`:

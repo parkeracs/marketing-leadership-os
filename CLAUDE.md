@@ -45,7 +45,7 @@ Captured with Obsidian Web Clipper, queried and maintained with Claude Code. **R
 
 ## Clip lifecycle
 
-`inbox/` (status: inbox) → `/process-inbox` checks metadata, writes the takeaways and tags, links the creator → `library/` (status: library) → when a tag has 3+ library notes and no playbook, suggest one.
+`inbox/` (status: inbox) → `/process-inbox` checks metadata, writes the takeaways and tags, links the creator → `library/` (status: library) → when a tag has 3+ library notes and no playbook, suggest one; when a note would change a playbook, flag it under that playbook's `pending_updates` (see `playbooks/_index.md`).
 
 **"My take" is optional and added over time.** The owner annotates the pieces that matter to them. Don't ask for takes during processing. **Never write one for them.** A note with a take carries more weight than one without.
 

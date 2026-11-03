@@ -5,6 +5,16 @@ filters:
     - file.inFolder("case-studies")
 views:
   - type: table
+    name: Playbooks to update
+    filters:
+      and:
+        - file.inFolder("playbooks")
+        - 'pending_updates.length > 0'
+    order:
+      - file.name
+      - note.pending_updates
+      - note.last_reviewed
+  - type: table
     name: Aging or past review
     filters:
       or:

@@ -70,7 +70,21 @@ Show all items together: principles and specifics (with dates), shelf life, any 
 
 ## Then check for patterns
 
-If any tag now has 3+ library notes and no playbook covers it, offer to draft one with `/build-playbook`. If a new item contradicts a playbook, flag it.
+If any tag now has 3+ library notes and no playbook covers it, offer to draft one with `/build-playbook`.
+
+**Flag the playbooks a new note would change.** For each new note, check the playbooks on its topic. Flag a playbook only when the note would change it:
+- **contradicts**: it disagrees with a step, recipe or *agree* item
+- **newer figure**: it gives a newer benchmark or number than the one the playbook quotes
+- **adds**: it adds a recipe, step, failure mode or resource the playbook doesn't have
+
+A note that's on topic but adds nothing new is not a flag. Write each flag as one line in the frontmatter of the playbook it changes (the child, if the change sits in a child), under `pending_updates`:
+
+```yaml
+pending_updates:
+  - "2026-11-04 · newer figure · [[Note title]] · CAC payback now 18–24 months (as of 2026-09), vs 12–18 in the Numbers step"
+```
+
+The format is `date · contradicts | newer figure | adds · [[library note]] · reason`, with the reason in one line, specific enough to act on. Don't add a second flag for the same note on the same playbook. List the flags in the batch summary, and remind the owner that `/build-playbook <job> refresh` works through them. They also show on `Home.md` under *Playbooks to update*.
 
 ## Before finishing
 

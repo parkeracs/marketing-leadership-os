@@ -16,7 +16,12 @@ disable-model-invocation: true
 
 Build the playbook for $ARGUMENTS. **The bar:** when the owner opens this playbook, they can trust that it holds all the most relevant material and resources on the job, not just what the canon happened to cover.
 
-Read first: `playbooks/_index.md` (format), `taxonomy.md`, `freshness.md`, `canon/_index.md`, and any existing playbook on the topic. With `refresh`, extend the existing playbook: keep its structure and anything the owner has edited, and add what's missing. Don't rewrite it from scratch.
+Read first: `playbooks/_index.md` (format), `taxonomy.md`, `freshness.md`, `canon/_index.md`, and any existing playbook on the topic. With `refresh`, extend the existing playbook: keep its structure and anything the owner has edited, and add what's missing. Don't rewrite it from scratch. **Start with its `pending_updates` flags** (on the hub and its children). For each one:
+  1. **Read the original, not just the library note:** the clipped text if the note kept it, otherwise the source URL, or the sanctioned connector for a paid source. Never get round a paywall. The summary alone can miss the conditions a figure or recommendation depends on.
+  2. **Cross-check the whole playbook, hub and children together,** not just the step the flag names: the *agree* items, *What changes the answer*, the process steps, *Where the sources disagree*, failure modes and the resource directory. One source can touch several.
+  3. **Re-apply the agree rule:** if the new source contradicts an *agree* item, or it no longer has 3+ sources, move it to *Where the sources disagree*. If an older figure is superseded, mark it on its library note too.
+  4. **Apply the change with citations,** or decide it doesn't belong and say why.
+  Then remove each flag you've dealt with, set `last_reviewed` to today, and list in your summary what each flag changed, or why it changed nothing.
 
 ## 1. Scope and coverage
 
