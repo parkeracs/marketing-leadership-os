@@ -60,7 +60,7 @@ Show the current tag list from `taxonomy.md` as one compact line.
    - Remove the example row from the table if the owner chose to delete the examples.
 3. **`taxonomy.md`**: apply round 3's changes. A new tag needs a one-line "Covers" description.
 4. **`CLAUDE.md`**: change nothing, unless the owner asks. It reads `settings.md` for everything personal.
-5. **Examples**: if the owner chose to delete them, delete every note with `example: true` in its frontmatter and its index lines, then check that no wikilink points at a deleted note.
+5. **Examples**: if the owner chose to delete them, delete every note with `example: true` in its frontmatter and its index lines, then check that no wikilink points at a deleted note. That includes notes you kept and made the owner's own, such as `canon/April Dunford.md`, which links the example playbook: remove or reword those links.
 6. **Workspaces**: if they said yes in round 4, tell them to run `/workspace-setup <company>` next, after checking their employer's AI policy.
 
 ## Finish

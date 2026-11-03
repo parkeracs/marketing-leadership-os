@@ -1,7 +1,7 @@
 # Web Clipper setup (≈10 minutes, one time)
 
 1. Install **Obsidian Web Clipper** from the Chrome Web Store (official, by Obsidian).
-2. In Obsidian: **Open folder as vault** → this folder.
+2. In Obsidian: **Open folder as vault** → this folder (skip this if you've already done it).
 3. Clipper → Settings (cog) → Templates → **Import** → `marketing-leadership-os-clip.json`. Drag it to the **top** of the template list so it's the default.
 4. In that template, set **Vault** to this vault's name, so clips never land in another vault.
 5. **Leave Interpreter off.** No API key is needed: the clip saves the full text, and `/process-inbox` writes the takeaways and tags afterwards on your Claude plan.

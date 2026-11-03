@@ -41,15 +41,15 @@ Every skill asks two to four quick questions the first time you run it, to fit h
 
 ## Let Claude set it up
 
-*Instructions for Claude Code, when the owner asks it to set up this kit.* Explain each step in a line as you go, and ask before installing anything.
+*Instructions for Claude Code, when the owner asks it to set up this kit.* Explain each step in a line as you go, and ask before installing anything. Tell the owner up front that you'll ask permission to edit files in the new folder, and that approving for the whole session saves repeated prompts.
 
-1. **Make the owner's copy.** Ask where to put it [`~/marketing-leadership-os`]. Then, from the parent folder:
-   - If the GitHub CLI is installed and signed in (`gh auth status`): `gh repo create <folder-name> --template parkeracs/marketing-leadership-os --private --clone`. The copy must be **private**: the library will hold paid and personal material.
-   - Otherwise, if git is installed: `git clone https://github.com/parkeracs/marketing-leadership-os <folder>`, then `git remote remove origin`, so it never points at the template.
-   - Otherwise: download `https://github.com/parkeracs/marketing-leadership-os/archive/refs/heads/main.zip` and unzip it into the folder.
+1. **Make the owner's copy.** Ask where to put it [`~/marketing-leadership-os`]. Then `cd` to its parent folder and use the first route that works:
+   - If the GitHub CLI is installed and signed in (`gh auth status`): `gh repo create <folder-name> --template parkeracs/marketing-leadership-os --private --clone`. The GitHub repository takes the folder's name, and it must be **private**: the library will hold paid and personal material. Then check `CLAUDE.md` exists in the copy; a new template copy can take a few seconds to fill, so if it's missing, wait and run `git pull`.
+   - Otherwise, if git is installed: `git clone --depth 1 https://github.com/parkeracs/marketing-leadership-os <folder>`, then delete the copy's `.git` folder and run `git init`, so it starts its own history and never points at the template.
+   - Otherwise: download `https://github.com/parkeracs/marketing-leadership-os/archive/refs/heads/main.zip` , unzip it, and rename the `marketing-leadership-os-main` folder it makes to the chosen name.
 2. **Read** the new copy's `CLAUDE.md` and this README.
 3. **Obsidian.** Ask whether Obsidian 1.9+ is installed. If not, point the owner to https://obsidian.md. Then have them choose *Open folder as vault* and pick the new folder.
-4. **The interview.** Read `.claude/skills/setup/SKILL.md` in the new copy and follow it exactly, working on the files in that folder.
+4. **The interview.** Read `.claude/skills/setup/SKILL.md` in the new copy and follow it exactly, working on the files in that folder, but skip its Finish section: steps 5 and 6 below cover it. If the owner said yes to workspaces, mention `/workspace-setup <company>` as something to run after step 6.
 5. **Web Clipper.** Walk the owner through `setup/web-clipper/README.md`.
 6. **Finish.** Tell the owner to quit and reopen Claude Code *in the new folder*, so `/process-inbox`, `/build-playbook`, `/advise` and the other skills work as commands. Then give them step 5 of Setup, "Run the loop once".
 
