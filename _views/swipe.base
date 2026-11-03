@@ -1,0 +1,27 @@
+filters:
+  and:
+    - file.inFolder("swipe")
+    - 'origin == "swipe"'
+views:
+  - type: cards
+    name: Gallery
+    image: note.image
+    order:
+      - note.brand
+      - note.format
+      - note.techniques
+    sort:
+      - property: note.seen
+        direction: DESC
+  - type: table
+    name: Table
+    order:
+      - note.brand
+      - note.format
+      - note.channel
+      - note.audience
+      - note.techniques
+      - note.seen
+    sort:
+      - property: note.seen
+        direction: DESC

@@ -1,0 +1,42 @@
+filters:
+  and:
+    - file.inFolder("library")
+    - 'file.name != "_index"'
+views:
+  - type: table
+    name: Recently added
+    order:
+      - file.name
+      - note.author
+      - note.tags
+      - note.published
+      - note.freshness
+      - note.origin
+    sort:
+      - property: note.clipped
+        direction: DESC
+  - type: table
+    name: By author
+    order:
+      - note.author
+      - file.name
+      - note.tags
+      - note.published
+      - note.freshness
+    sort:
+      - property: note.author
+        direction: ASC
+  - type: table
+    name: Current only
+    filters:
+      and:
+        - 'freshness == "current"'
+    order:
+      - file.name
+      - note.author
+      - note.tags
+      - note.shelf_life
+      - note.review_by
+    sort:
+      - property: note.review_by
+        direction: ASC

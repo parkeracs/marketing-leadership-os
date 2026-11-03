@@ -1,0 +1,22 @@
+# Employer data never enters git
+workspaces/*
+!workspaces/_index.md
+
+# Obsidian local state
+.obsidian/workspace*.json
+.obsidian/cache
+.trash/
+.DS_Store
+
+# Source PDFs: large, and often licensed or gated
+*.pdf
+
+# Source files kept for private reference: licensed or gated, never in git
+attachments/*
+# Except swipe images: your own screenshots of public marketing
+!attachments/swipe/
+archive/
+
+# Swipe inbox: unprocessed images and clips stay out of git
+inbox/swipe/*
+!inbox/swipe/_index.md

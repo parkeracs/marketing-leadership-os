@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "Marketing Leadership OS — Clip",
+  "behavior": "create",
+  "noteNameFormat": "{{title|safe_name}}",
+  "path": "inbox",
+  "noteContentFormat": "> [!summary] Principles\n\n\n> [!warning] Numbers and tactics ⏳\n\n\n## My take\n\n\n## Notes\n\n\n## Highlights\n{{highlights}}\n\n## Content\n{{content}}",
+  "properties": [
+    {
+      "name": "title",
+      "value": "{{title}}",
+      "type": "text"
+    },
+    {
+      "name": "author",
+      "value": "{{author|split:\", \"|wikilink|join}}",
+      "type": "multitext"
+    },
+    {
+      "name": "source",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "site",
+      "value": "{{site}}",
+      "type": "text"
+    },
+    {
+      "name": "published",
+      "value": "{{published|date:\"YYYY-MM-DD\"}}",
+      "type": "date"
+    },
+    {
+      "name": "clipped",
+      "value": "{{date|date:\"YYYY-MM-DD\"}}",
+      "type": "date"
+    },
+    {
+      "name": "origin",
+      "value": "clip",
+      "type": "text"
+    },
+    {
+      "name": "format",
+      "value": "",
+      "type": "text"
+    },
+    {
+      "name": "tags",
+      "value": "",
+      "type": "multitext"
+    },
+    {
+      "name": "shelf_life",
+      "value": "",
+      "type": "text"
+    },
+    {
+      "name": "review_by",
+      "value": "",
+      "type": "date"
+    },
+    {
+      "name": "freshness",
+      "value": "",
+      "type": "text"
+    },
+    {
+      "name": "status",
+      "value": "inbox",
+      "type": "text"
+    }
+  ],
+  "triggers": []
+}

@@ -1,0 +1,21 @@
+filters:
+  or:
+    - file.inFolder("library")
+    - file.inFolder("playbooks")
+    - file.inFolder("case-studies")
+views:
+  - type: table
+    name: Aging or past review
+    filters:
+      or:
+        - 'freshness == "aging"'
+        - 'review_by <= today()'
+    order:
+      - file.name
+      - file.folder
+      - note.shelf_life
+      - note.review_by
+      - note.freshness
+    sort:
+      - property: note.review_by
+        direction: ASC

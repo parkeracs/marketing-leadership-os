@@ -1,0 +1,25 @@
+filters:
+  and:
+    - file.inFolder("playbooks")
+    - 'file.name != "_index"'
+views:
+  - type: table
+    name: All playbooks
+    order:
+      - file.name
+      - note.parent
+      - note.type
+      - note.tags
+      - note.last_reviewed
+      - note.review_by
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: cards
+    name: Hubs
+    filters:
+      and:
+        - 'parent.isEmpty()'
+    order:
+      - file.name
+      - note.tags

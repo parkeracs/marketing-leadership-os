@@ -1,0 +1,25 @@
+filters:
+  and:
+    - file.inFolder("case-studies")
+    - 'file.name != "_index"'
+views:
+  - type: cards
+    name: Gallery
+    order:
+      - note.company
+      - note.tactic
+      - note.confidence
+      - note.review_by
+  - type: table
+    name: Table
+    order:
+      - note.company
+      - note.tactic
+      - note.people
+      - note.tags
+      - note.confidence
+      - note.researched
+      - note.review_by
+    sort:
+      - property: note.researched
+        direction: DESC

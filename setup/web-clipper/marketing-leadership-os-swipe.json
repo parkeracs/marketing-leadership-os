@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "Marketing Leadership OS — Swipe",
+  "behavior": "create",
+  "noteNameFormat": "swipe {{date|date:\"YYYY-MM-DD HHmmss\"}} {{title|safe_name}}",
+  "path": "inbox/swipe",
+  "noteContentFormat": "{{image}}\n\n## Why I saved it\n\n\n## Highlights\n{{highlights}}\n",
+  "properties": [
+    {
+      "name": "title",
+      "value": "{{title}}",
+      "type": "text"
+    },
+    {
+      "name": "brand",
+      "value": "{{site}}",
+      "type": "text"
+    },
+    {
+      "name": "source_url",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "seen",
+      "value": "{{date|date:\"YYYY-MM-DD\"}}",
+      "type": "date"
+    },
+    {
+      "name": "origin",
+      "value": "swipe",
+      "type": "text"
+    },
+    {
+      "name": "status",
+      "value": "inbox",
+      "type": "text"
+    }
+  ]
+}
