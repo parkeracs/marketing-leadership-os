@@ -22,7 +22,7 @@ Process everything in `inbox/` (clips) and `inbox/pdfs/` (PDFs), except `_index.
 
 **Paid sources** (listed in `settings.md` under Sources): process only what the owner actually clipped, one piece at a time. **Never bulk-download or scrape a paid archive**, even to "complete" a series.
 
-## Before you start: relevance
+## Relevance
 **Relevance check, for every clip and PDF:** the vault serves the audience in `settings.md` (Profile → Audience). Apply the strictness set in settings. If a clip is aimed at a different audience (for example, for a B2B tech start-up audience: corporate-governance pieces, big-consultancy content for large enterprises, or generic business advice with no tech angle), flag it in the batch summary and suggest archiving rather than processing. The owner decides.
 
 ## PDF triage
