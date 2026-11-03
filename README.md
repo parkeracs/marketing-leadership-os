@@ -4,6 +4,8 @@ A personal operating system for marketing leaders: a library of the best thinkin
 
 It's an [Obsidian](https://obsidian.md) vault of plain markdown files, maintained by [Claude Code](https://claude.com/claude-code) skills. Nothing here is a black box: every note is a file you own, and it goes with you into every role.
 
+**New here? Start with the [guide](https://claude.ai/artifact/Bd818Roc7yQeGWyPULWXmA):** what it is, how it compounds, and setup in one prompt.
+
 This kit is the empty shell, plus one short example per layer so you can see what each note looks like. Built by [Andy Parker](https://www.linkedin.com/in/parkeracs).
 
 ## How it works
